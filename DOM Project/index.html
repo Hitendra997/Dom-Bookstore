@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>The Book Haven</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fas fa-bars"></i>
+      </label>
+      <div class="menu-container">
+        <a href="index.html" class="logo">
+          <img src="./assests/image.png" alt="logo" />
+        </a>
+      </div>
+      <ul class="nav-right">
+        <li><a href="index.html" class="Items">Home</a></li>
+        <li><a href="#" class="Items">Courses</a></li>
+        <li><a href="#" class="Items">Contact us</a></li>
+        <li><a href="#" class="login">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="main-container">
+        <input type="text" id="search-bar" placeholder="Search for a book" />
+        <div class="buttons">
+          <button onclick="addBook()">Add Book</button>
+          <button onclick="searchBook()">Search Book</button>
+          <button onclick="removeBook()">Remove Book</button>
+          <button onclick="clearSearchHighlights()">Clear Highlights</button>
+        </div>
+      </div>
+      <div class="left-container">
+        <ul id="book-list">
+          <li onclick="toggleFavorite(event)">One Indian Girl</li>
+          <li onclick="toggleFavorite(event)">The Girl in Room 105</li>
+          <li onclick="toggleFavorite(event)">Eleven Minutes</li>
+          <li onclick="toggleFavorite(event)">The Spy</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="carditem">
+        <img src="./assests/img1.jpg" alt="Book 1" />
+        <h3>One Indian Girl</h3>
+        <p>
+          One Indian Girl is a novel by the Indian author Chetan Bhagat. The
+          book is about a girl named Radhika Mehta, who is a worker at the
+          distressed debt group of Goldman Sachs, an investment bank.
+        </p>
+      </div>
+      <div class="carditem">
+        <img src="./assests/img2.jpg" alt="Book 2" />
+        <h3>The Girl in Room 105</h3>
+        <p>
+          The Girl in Room 105 is the eighth novel and the tenth book overall
+          written by the Indian author Chetan Bhagat. The book became a
+          bestseller based on prearranged sales alone. It tells about an IIT
+          coaching class tutor who goes to wish his ex-girlfriend on her
+          birthday and finds her murdered.
+        </p>
+      </div>
+      <div class="carditem">
+        <img src="./assests/img3.jpg" alt="Book 3" />
+        <h3>Eleven Minutes</h3>
+        <p>
+          Eleven Minutes is a 2003 novel by Brazilian novelist Paulo Coelho that
+          recounts the experiences of a young Brazilian prostitute and her
+          journey to self-realisation through sexual experience.
+        </p>
+      </div>
+      <div class="carditem">
+        <img src="./assests/img4.jpg" alt="Book 4" />
+        <h3>The Spy</h3>
+        <p>
+          In The Spy by Paulo Coelho, dancer Mata Hari rebels against the
+          accepted roles of women for her time period in order to follow her
+          dreams. At the beginning of World War I, she is sought by German
+          officials to act as a spy because she is having an affair with the man
+          who will become France's minister of war.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 The Book Haven. All rights reserved.</p>
+        <p>M8X7+M3 Kathmandu</p>
+        <p>Phone: 9849723178 | Email: thebookhaven69@gmail.com</p>
+        <br />
+        <div class="social-media">
+          <a href="https://www.instagram.com/bookverse.np/"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcBJREFUSEvllk1OxDAMhT03gZMABwEBFwFOws9F+NmyZQ+cBPqN/JBJnTZtFhUi0qgznfg9+9lxvLON1m4jXvsTxAdmxmduPc1t4P+5iK/N7MjMjlvAfM+HP++HJ/bpqhFDdBsiFJieU35EJ9l/YmYjuxrxu5Mi280QcZN87o3SgeM4Aelh6WlGjMG5k+Ht0nXqKXxx1SC/M7OLCJQRK1q8bJE24kH64C8gwv4xizoj/nLDWhqQEkUoOoA/PSK+nw2yUlSsSyclkJHcJTigbCSnmcxU6VWiPcCqYpwC983MXh0PXPB+aqUkJh9IkxFHUgpOaSByyFi8L48QeOCuIpYSgP8CcEI5jDPkNp6CLmJFO6rOILtOQxl1F7FAiQbybNXS1EWcGhfs5BkHS1W6iDeTOhZXJrdkzoqvK2IAJSXfkfM59Gad7ew4qRNOHqepBqKOlTWQ2hnmfdqCa50rvVFChEhL48AZIkeBWl9PW3DWj1squPXGUnpmezWAquBav24lZZ+CaLoWkQ8DnmsGAQixXTwIyFDk/O4ZfcrevVdsatiL9+6SYU+Orhr2yjy2jrbYNc1nc+PtkkJatPf/EX8DIXGOHzTONr8AAAAASUVORK5CYII="
+          /></a>
+
+          <a href="https://www.facebook.com/bookverse.lk"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMRJREFUSEvtltENgzAMRI9NyibtJmWStpPQTYBJYJT2UCNZESQmNERIzg8fIL/c+YxcodCpCnFxevD159zkPVcN3aOYsAcAB3UQwutYC1PBFwDjSvGsYEIJXzrZwEtqewCDuMUzh9XsaScKqxT6F0np8R1AKwpR7S2m0MBaq0Mp9l18A2hi1ucAv77Qv6V6i+JiYCacSQ8erdWyiI2T/UBiuZrfW7g0Ntk4HTZOXH3kvsUNxK21mlYlp1pdPPRhyjidG/wBFwwxH4oeX7wAAAAASUVORK5CYII="
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
